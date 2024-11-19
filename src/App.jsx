@@ -4,12 +4,11 @@ import Input from './components/login-page/Input'
 import RememberMe from './components/login-page/RememberMe'
 import Button from './components/Button'
 import BottomPageButtons from './components/BottomPageButtons'
-import './App.css'
 
 function App() {
 
   return (
-    <div className="container-login">
+    <div className="flex flex-col justify-center min-h-screen">
       <div className="container-logo">
         <Logo />
       </div>

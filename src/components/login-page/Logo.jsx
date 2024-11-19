@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Logo extends Component {
-  render() {
-    return (
-      <h1 class="most-wazted logo">Sneaker<br />Scout</h1>
-    )
-  }
+export default function Logo() {
+  return (
+    <h1 class="most-wazted logo">Sneaker<br />Scout</h1>
+  )
 }
+

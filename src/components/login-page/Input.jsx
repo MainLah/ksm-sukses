@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Input extends Component {
-  render() {
-    return (
-      <div className="container-input">
-        <label htmlFor={this.props.labelFor}>{this.props.labelText}</label>
-        <input type={this.props.inputType} name={this.props.inputName} className={this.props.inputClass}/>
-      </div>
-    )
-  }
+export default function Input(props) {
+  const {labelFor, labelText, inputType, inputName, inputClass} = props
+  return (
+    <div className="container-input">
+      <label htmlFor={labelFor}>{labelText}</label>
+      <input type={inputType} name={inputName} className={inputClass}/>
+    </div>
+  )
 }
