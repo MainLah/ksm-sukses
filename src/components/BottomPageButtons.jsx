@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function BottomPageButtons() {
+export default function BottomPageButtons(props) {
+  const {bottomPageText, bottomPageButtonText} = props
+
   return (
   <div className="bottomPageButtons">
-    <p>{this.props.bottomPageText} <a href="#">{this.props.bottomPageButtonText}</a></p>
+    <p>{bottomPageText} <a href="#">{bottomPageButtonText}</a></p>
   </div>
   )
 }
