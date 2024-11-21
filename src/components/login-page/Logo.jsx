@@ -1,8 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function Logo() {
   return (
-    <h1 class="most-wazted logo">Sneaker<br />Scout</h1>
-  )
+    <h1 class="most-wazted logo">
+      Sneaker
+      <br />
+      Scout
+    </h1>
+  );
 }
-
