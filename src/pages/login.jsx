@@ -51,6 +51,7 @@ function LoginPage() {
           <BottomPageButtons
             bottomPageText="New To SneakerScout?"
             bottomPageButtonText="Sign Up"
+            linkTo="/signup"
           />
         </div>
       </div>

@@ -63,6 +63,7 @@ function SignUpPage() {
           <BottomPageButtons
             bottomPageText="Already Have An Account?"
             bottomPageButtonText="Sign In"
+            linkTo="/login"
           />
         </div>
       </div>
