@@ -1,7 +1,23 @@
+@import url("https://fonts.cdnfonts.com/css/most-wasted");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.email-pw-form {
-  border-width: 1px;
+:root {
+  --logo-text-color: #eb4511;
+}
+
+p,
+label,
+a,
+*::placeholder {
+  font-family: "Roboto Slap", serif !important;
+}
+
+.most-wazted {
+  font-family: "Most Wazted", sans-serif;
+}
+
+.logo {
+  color: var(--logo-text-color);
 }

@@ -23,7 +23,7 @@ function LoginPage() {
               labelText="Email"
               inputName="email"
               inputType="email"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem]"
+              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
               placeholder="Enter your email"
             />
             <Input
@@ -31,7 +31,7 @@ function LoginPage() {
               labelText="Password"
               inputName="password"
               inputType="password"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem]"
+              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
               placeholder="********"
             />
           </div>

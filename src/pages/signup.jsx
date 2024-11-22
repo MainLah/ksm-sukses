@@ -2,14 +2,14 @@ import React from "react";
 import Logo from "../components/fragments/Logo";
 import MainText from "../components/fragments/MainText";
 import Input from "../components/fragments/Input";
-import RememberMe from "../components/fragments/RememberMe";
+import ReceiveNews from "../components/fragments/ReceiveNews";
 import Button from "../components/fragments/Button";
 import BottomPageButtons from "../components/fragments/BottomPageButtons";
 
 function SignUpPage() {
   return (
     <div className="flex justify-between">
-      <div className="container-logo">
+      <div className="container-logo text-center m-5">
         <Logo />
       </div>
       <div className="flex flex-col justify-center min-h-screen">
@@ -23,7 +23,7 @@ function SignUpPage() {
               labelText="Username"
               inputName="username"
               inputType="text"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem]"
+              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
               placeholder="Enter your Username"
             />
             <Input
@@ -31,7 +31,7 @@ function SignUpPage() {
               labelText="Email"
               inputName="email"
               inputType="email"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem]"
+              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
               placeholder="Enter your Email"
             />
             <Input
@@ -39,7 +39,7 @@ function SignUpPage() {
               labelText="Password"
               inputName="password"
               inputType="password"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem]"
+              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
               placeholder="********"
             />
             <Input
@@ -47,11 +47,11 @@ function SignUpPage() {
               labelText="Confirm Password"
               inputName="password"
               inputType="password"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem]"
+              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
               placeholder="********"
             />
           </div>
-          <RememberMe />
+          <ReceiveNews />
           <div className="sign-up-buttons flex flex-col">
             <Button
               buttonText="Sign Up"
