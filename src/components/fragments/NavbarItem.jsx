@@ -6,7 +6,7 @@ export default function NavbarItem(props) {
   return (
     <li>
       {icon}
-      <Link to={"/" + itemName} className="opacity-25 text-xl">
+      <Link to={"/" + itemName} className="opacity-25 md:text-xl sm:text-sm">
         {children}
       </Link>
     </li>
