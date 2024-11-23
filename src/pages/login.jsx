@@ -6,6 +6,18 @@ import RememberMe from "../components/fragments/RememberMe";
 import Button from "../components/fragments/Button";
 import BottomPageButtons from "../components/fragments/BottomPageButtons";
 
+function handleLogin(event) {
+  event.preventDefault();
+  if (
+    localStorage.getItem("email") === event.target.email.value &&
+    localStorage.getItem("password") === event.target.password.value
+  ) {
+    window.location.href = "/";
+  } else {
+    alert("Incorrect Email or Password!");
+  }
+}
+
 function LoginPage() {
   return (
     <div className="flex justify-between">
@@ -18,33 +30,35 @@ function LoginPage() {
             <MainText welcomingText="WELCOME BACK !" />
           </div>
           <div className="container-email-pw">
-            <Input
-              labelFor="email"
-              labelText="Email"
-              inputName="email"
-              inputType="email"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
-              placeholder="Enter your email"
-            />
-            <Input
-              labelFor="password"
-              labelText="Password"
-              inputName="password"
-              inputType="password"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
-              placeholder="********"
-            />
-          </div>
-          <RememberMe />
-          <div className="sign-in-buttons flex flex-col">
-            <Button
-              buttonText="Sign In"
-              className="bg-black text-white py-1 px-6 my-3 w-[450px] h-[62px]"
-            />
-            <Button
-              buttonText="Sign In With Google"
-              className="bg-white py-1 px-6 my-3 w-[450px] h-[62px] border-[1px] border-slate-300"
-            />
+            <form action="submit" onSubmit={handleLogin}>
+              <Input
+                labelFor="email"
+                labelText="Email"
+                inputName="email"
+                inputType="email"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                placeholder="Enter your email"
+              />
+              <Input
+                labelFor="password"
+                labelText="Password"
+                inputName="password"
+                inputType="password"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                placeholder="********"
+              />
+              <RememberMe />
+              <div className="sign-in-buttons flex flex-col">
+                <Button
+                  buttonText="Sign In"
+                  className="bg-black text-white py-1 px-6 my-3 w-[450px] h-[62px]"
+                />
+                <Button
+                  buttonText="Sign In With Google"
+                  className="bg-white py-1 px-6 my-3 w-[450px] h-[62px] border-[1px] border-slate-300"
+                />
+              </div>
+            </form>
           </div>
         </div>
         <div className="bottomPageButton">

@@ -6,6 +6,20 @@ import ReceiveNews from "../components/fragments/ReceiveNews";
 import Button from "../components/fragments/Button";
 import BottomPageButtons from "../components/fragments/BottomPageButtons";
 
+function handleRegister(event) {
+  event.preventDefault();
+  if (event.target.password.value !== event.target.confirmPassword.value) {
+    alert("Confirm Password Incorrect!");
+  }
+  if (localStorage.getItem(event.target.email.value)) {
+    alert("Email is already registered!");
+  }
+  localStorage.setItem("userName", event.target.username.value);
+  localStorage.setItem("email", event.target.email.value);
+  localStorage.setItem("password", event.target.password.value);
+  window.location.href = "/";
+}
+
 function SignUpPage() {
   return (
     <div className="flex justify-between">
@@ -18,45 +32,47 @@ function SignUpPage() {
             <MainText welcomingText="START YOUR JOURNEY WITH US!" />
           </div>
           <div className="container-email-pw">
-            <Input
-              labelFor="username"
-              labelText="Username"
-              inputName="username"
-              inputType="text"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
-              placeholder="Enter your Username"
-            />
-            <Input
-              labelFor="email"
-              labelText="Email"
-              inputName="email"
-              inputType="email"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
-              placeholder="Enter your Email"
-            />
-            <Input
-              labelFor="password"
-              labelText="Password"
-              inputName="password"
-              inputType="password"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
-              placeholder="********"
-            />
-            <Input
-              labelFor="password"
-              labelText="Confirm Password"
-              inputName="password"
-              inputType="password"
-              inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
-              placeholder="********"
-            />
-          </div>
-          <ReceiveNews />
-          <div className="sign-up-buttons flex flex-col">
-            <Button
-              buttonText="Sign Up"
-              className="bg-black text-white py-1 px-6 my-3 w-[450px] h-[62px]"
-            />
+            <form onSubmit={handleRegister}>
+              <Input
+                labelFor="username"
+                labelText="Username"
+                inputName="username"
+                inputType="text"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                placeholder="Enter your Username"
+              />
+              <Input
+                labelFor="email"
+                labelText="Email"
+                inputName="email"
+                inputType="email"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                placeholder="Enter your Email"
+              />
+              <Input
+                labelFor="password"
+                labelText="Password"
+                inputName="password"
+                inputType="password"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                placeholder="********"
+              />
+              <Input
+                labelFor="password"
+                labelText="Confirm Password"
+                inputName="confirmPassword"
+                inputType="password"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                placeholder="********"
+              />
+              <ReceiveNews />
+              <div className="sign-up-buttons flex flex-col">
+                <Button
+                  buttonText="Sign Up"
+                  className="bg-black text-white py-1 px-6 my-3 w-[450px] h-[62px]"
+                />
+              </div>
+            </form>
           </div>
         </div>
         <div className="bottomPageButton">
