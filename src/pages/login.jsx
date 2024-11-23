@@ -21,7 +21,7 @@ function handleLogin(event) {
 function LoginPage() {
   return (
     <div className="flex justify-between">
-      <div className="container-logo">
+      <div className="container-logo m-5">
         <Logo />
       </div>
       <div className="flex flex-col justify-center min-h-screen">
