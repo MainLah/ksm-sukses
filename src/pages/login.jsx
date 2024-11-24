@@ -13,8 +13,10 @@ function handleLogin(event) {
     localStorage.getItem("password") === event.target.password.value
   ) {
     window.location.href = "/";
+  } else if (!event.target.email.value || !event.target.password.value) {
+    alert("Email or Password Cannot Be Empty!");
   } else {
-    alert("Incorrect Email or Password!");
+    alert("Email or Password is Incorrect!");
   }
 }
 
