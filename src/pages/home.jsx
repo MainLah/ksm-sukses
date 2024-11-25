@@ -23,6 +23,11 @@ export default function HomePage() {
         a statement. Start your journey with us today!
       </About>
       <ProductGrid />
+      <Hero HeroTitle="NEW ARRIVAL!" img="foto-hero1.png">
+        WMNS AIR JORDAN 3 RETRO <br />
+        LUCKY GREEN
+      </Hero>
+      <ProductGrid />
     </div>
   );
 }
