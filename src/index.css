@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/most-wasted");
 @tailwind base;
 @tailwind components;
@@ -11,7 +12,7 @@ p,
 label,
 a,
 *::placeholder {
-  font-family: "Roboto Slap", serif !important;
+  font-family: "Roboto Slab", serif !important;
 }
 
 .most-wazted {
