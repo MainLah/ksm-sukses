@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/fragments/Navbar";
 import Hero from "../components/fragments/Hero";
 import About from "../components/fragments/About";
+import ProductGrid from "../components/fragments/ProductGrid";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
         for every sneakerhead. Dive into a world where each step is about making
         a statement. Start your journey with us today!
       </About>
+      <ProductGrid />
     </div>
   );
 }
