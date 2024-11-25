@@ -11,7 +11,7 @@ export default function Input(props) {
       <input
         type={inputType}
         name={inputName}
-        className={inputClass}
+        className={inputClass + " pl-3"}
         placeholder={placeholder}
       />
     </div>
