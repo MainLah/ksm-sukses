@@ -3,6 +3,7 @@ import Navbar from "../components/fragments/Navbar";
 import Hero from "../components/fragments/Hero";
 import About from "../components/fragments/About";
 import ProductGrid from "../components/fragments/ProductGrid";
+import NewReleaseText from "../components/fragments/NewReleaseText";
 
 export default function HomePage() {
   return (
@@ -22,11 +23,13 @@ export default function HomePage() {
         for every sneakerhead. Dive into a world where each step is about making
         a statement. Start your journey with us today!
       </About>
+      <NewReleaseText />
       <ProductGrid />
       <Hero HeroTitle="NEW ARRIVAL!" img="foto-hero1.png">
         WMNS AIR JORDAN 3 RETRO <br />
         LUCKY GREEN
       </Hero>
+      <NewReleaseText />
       <ProductGrid />
     </div>
   );
