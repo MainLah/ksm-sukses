@@ -5,8 +5,8 @@ export default function NavbarItem(props) {
   const { icon, itemName, children } = props;
   return (
     <li>
-      {icon}
       <Link to={"/" + itemName} className="opacity-25 md:text-xl sm:text-sm">
+        <i className={icon + " pr-2 text-[#898989]"}></i>
         {children}
       </Link>
     </li>

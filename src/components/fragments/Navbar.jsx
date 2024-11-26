@@ -11,9 +11,15 @@ export default function Navbar() {
       </div>
       <SearchBar />
       <ul className="flex flex-row w-1/5 justify-evenly">
-        <NavbarItem itemName="catalog">Catalog</NavbarItem>
-        <NavbarItem itemName="wishlist">Wishlist</NavbarItem>
-        <NavbarItem itemName="account">Account</NavbarItem>
+        <NavbarItem itemName="catalog" icon="bi bi-house-door">
+          Catalog
+        </NavbarItem>
+        <NavbarItem itemName="wishlist" icon="bi bi-bag">
+          Wishlist
+        </NavbarItem>
+        <NavbarItem itemName="account" icon="bi bi-person">
+          Account
+        </NavbarItem>
       </ul>
     </nav>
   );
