@@ -11,13 +11,13 @@ export default function Navbar() {
       </div>
       <SearchBar />
       <ul className="flex flex-row w-1/5 justify-evenly">
-        <NavbarItem itemName="catalog" icon="bi bi-house-door">
+        <NavbarItem navRef="catalog" icon="bi bi-house-door">
           Catalog
         </NavbarItem>
-        <NavbarItem itemName="wishlist" icon="bi bi-bag">
+        <NavbarItem navRef="wishlist" icon="bi bi-bag">
           Wishlist
         </NavbarItem>
-        <NavbarItem itemName="account" icon="bi bi-person">
+        <NavbarItem navRef="account" icon="bi bi-person">
           Account
         </NavbarItem>
       </ul>

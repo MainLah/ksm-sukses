@@ -4,6 +4,7 @@ import Hero from "../components/fragments/Hero";
 import About from "../components/fragments/About";
 import ProductGrid from "../components/fragments/ProductGrid";
 import NewReleaseText from "../components/fragments/NewReleaseText";
+import Footer from "../components/fragments/Footer";
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
       </Hero>
       <NewReleaseText />
       <ProductGrid />
+      <Footer />
     </div>
   );
 }
