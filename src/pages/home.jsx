@@ -25,13 +25,13 @@ export default function HomePage() {
         a statement. Start your journey with us today!
       </About>
       <NewReleaseText />
-      <ProductGrid />
+      <ProductGrid numberOfProducts="8" numberOfCols="4" />
       <Hero HeroTitle="NEW ARRIVAL!" img="foto-hero1.png">
         WMNS AIR JORDAN 3 RETRO <br />
         LUCKY GREEN
       </Hero>
       <NewReleaseText />
-      <ProductGrid />
+      <ProductGrid numberOfProducts="8" numberOfCols="4" />
       <Footer />
     </div>
   );
