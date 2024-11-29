@@ -12,6 +12,7 @@
 p,
 label,
 a,
+button,
 *::placeholder {
   font-family: "Roboto Slab", serif;
   opacity: 1 !important;

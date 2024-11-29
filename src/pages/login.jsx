@@ -12,6 +12,7 @@ function handleLogin(event) {
     localStorage.getItem("email") === event.target.email.value &&
     localStorage.getItem("password") === event.target.password.value
   ) {
+    localStorage.setItem("token", event.target.email.value);
     window.location.href = "/home";
   } else if (!event.target.email.value || !event.target.password.value) {
     alert("Email or Password Cannot Be Empty!");

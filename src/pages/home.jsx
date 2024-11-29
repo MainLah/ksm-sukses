@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import Navbar from "../components/fragments/Navbar";
 import Hero from "../components/fragments/Hero";
 import About from "../components/fragments/About";
@@ -7,6 +7,20 @@ import NewReleaseText from "../components/fragments/NewReleaseText";
 import Footer from "../components/fragments/Footer";
 
 export default function HomePage() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+
+    if (!isLoggedIn) {
+      window.location.href = "/";
+    }
+  }, []);
+
   return (
     <div className="">
       <Navbar />

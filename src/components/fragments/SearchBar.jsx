@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchBar() {
   return (
-    <div className="w-3/5 border-[1px]">
+    <div className="w-2/5 border-[1px]">
       <input
         type="text"
         placeholder="Search"
