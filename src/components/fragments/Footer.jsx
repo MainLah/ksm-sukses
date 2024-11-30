@@ -6,7 +6,7 @@ import QuoteFooter from "./QuoteFooter";
 export default function Footer() {
   return (
     <nav className="flex flex-col items-center w-full bg-[#3E3E3E] py-12">
-      <div className="flex flex-row justify-between w-10/12">
+      <div className="flex flex-col md:flex-row justify-between w-10/12">
         <LogoContactFooter />
         <ContactInformation />
         <QuoteFooter />

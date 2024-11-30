@@ -19,15 +19,25 @@ export default function TableColor() {
   }
 
   return (
-    <table className="border-[1px] w-72">
-      <tr>
-        <th className="font-normal border-b-[1px]">
-          <p className="text-left p-5 text-2xl">Color</p>
-        </th>
-      </tr>
-      <tr className="flex flex-col p-5">
-        <div className="grid">{renderBubble()}</div>
-      </tr>
-    </table>
+    // <table className="border-[1px] w-72">
+    //   <tr>
+    //     <th className="font-normal border-b-[1px]">
+    //       <p className="text-left p-5 text-2xl">Color</p>
+    //     </th>
+    //   </tr>
+    //   <tr className="flex flex-col p-5">
+    //     <div className="grid">
+    //       <ColorBubble color="#fefdff"></ColorBubble>
+    //     </div>
+    //   </tr>
+    // </table>
+    <div>
+      <div>
+        <p>Color</p>
+      </div>
+      <div>
+        <ColorBubble bgColor="bg-[#00a3ff]"></ColorBubble>
+      </div>
+    </div>
   );
 }
