@@ -39,7 +39,7 @@ function LoginPage() {
                 labelText="Email"
                 inputName="email"
                 inputType="email"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
                 placeholder="Enter your email"
               />
               <Input
@@ -47,7 +47,7 @@ function LoginPage() {
                 labelText="Password"
                 inputName="password"
                 inputType="password"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
                 placeholder="********"
               />
               <RememberMe />
@@ -58,7 +58,7 @@ function LoginPage() {
                 />
                 <Button
                   buttonText="Sign In With Google"
-                  className="bg-white py-1 px-6 my-3 w-[450px] h-[62px] border-[1px] border-slate-300"
+                  className="bg-white py-1 px-6 my-3 w-[450px] h-[62px] border border-slate-300"
                 />
               </div>
             </form>

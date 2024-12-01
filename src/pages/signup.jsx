@@ -38,7 +38,7 @@ function SignUpPage() {
                 labelText="Username"
                 inputName="username"
                 inputType="text"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
                 placeholder="Enter your Username"
               />
               <Input
@@ -46,7 +46,7 @@ function SignUpPage() {
                 labelText="Email"
                 inputName="email"
                 inputType="email"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
                 placeholder="Enter your Email"
               />
               <Input
@@ -54,7 +54,7 @@ function SignUpPage() {
                 labelText="Password"
                 inputName="password"
                 inputType="password"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
                 placeholder="********"
               />
               <Input
@@ -62,7 +62,7 @@ function SignUpPage() {
                 labelText="Confirm Password"
                 inputName="confirmPassword"
                 inputType="password"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border-[1px]"
+                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
                 placeholder="********"
               />
               <ReceiveNews />

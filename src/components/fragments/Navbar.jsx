@@ -79,7 +79,7 @@ export default function Navbar() {
             </NavbarItem>
             <Button
               buttonText="Sign Out"
-              className="bg-white py-1 px-3 border-[1px] border-slate-300"
+              className="bg-white py-1 px-3 border border-slate-300"
               onClick={handleLogOut}
             />
           </ul>

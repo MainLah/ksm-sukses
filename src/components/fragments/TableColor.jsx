@@ -12,8 +12,6 @@ export default function TableColor() {
     "00A3FF": 7,
   };
 
-  // const colorGridData = [{"#000000": 7}]
-
   function renderBubble() {
     return Object.keys(colorGridData).map((key) => (
       <div>{Array(7).fill(<ColorBubble key={key} bgColor={key} />)}</div>
@@ -28,10 +26,7 @@ export default function TableColor() {
         </th>
       </tr>
       <tr className="flex flex-col p-5">
-        <div className="flex justify-between">
-          {/* <ColorBubble bgColor="000000"></ColorBubble> */}
-          {renderBubble()}
-        </div>
+        <div className="flex justify-between">{renderBubble()}</div>
       </tr>
     </table>
   );
