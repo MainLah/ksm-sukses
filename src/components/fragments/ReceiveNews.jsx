@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ReceiveNews() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row mt-5 mb-2">
       <div>
         <input type="checkbox" name="receive-news" className="mr-2" />
       </div>

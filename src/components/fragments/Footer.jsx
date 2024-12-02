@@ -12,7 +12,7 @@ export default function Footer() {
         <QuoteFooter />
       </div>
       <hr className="w-10/12 mt-10" />
-      <p className="w-10/12 text-right text-[#F5F4F4] mt-3">
+      <p className="w-10/12 text-right text-[#F5F4F4] mt-3 font-light">
         2024 Sneaker Scout Inc. All rights reserved
       </p>
     </nav>

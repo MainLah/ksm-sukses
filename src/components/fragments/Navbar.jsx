@@ -71,7 +71,7 @@ export default function Navbar() {
             <NavbarItem navRef="catalog" icon="bi bi-house-door">
               Catalog
             </NavbarItem>
-            <NavbarItem navRef="wishlist" icon="bi bi-bag">
+            <NavbarItem navRef="profile" icon="bi bi-bag">
               Wishlist
             </NavbarItem>
             <NavbarItem navRef="profile" icon="bi bi-person">

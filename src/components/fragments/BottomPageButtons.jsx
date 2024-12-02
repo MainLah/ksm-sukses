@@ -6,8 +6,11 @@ export default function BottomPageButtons(props) {
 
   return (
     <div className="bottomPageButtons">
-      <p>
-        {bottomPageText} <Link to={linkTo}>{bottomPageButtonText}</Link>
+      <p className="text-center text-[#898989] font-medium">
+        {bottomPageText}{" "}
+        <span className="text-black">
+          <Link to={linkTo}>{bottomPageButtonText}</Link>
+        </span>
       </p>
     </div>
   );

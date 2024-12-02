@@ -26,7 +26,7 @@ function SignUpPage() {
       <div className="container-logo text-center m-5">
         <Logo />
       </div>
-      <div className="flex flex-col justify-center min-h-screen">
+      <div className="flex flex-col justify-center items-center min-h-screen">
         <div className="container-form min-w-full">
           <div className="container-main-text mb-[1rem]">
             <MainText welcomingText="START YOUR JOURNEY WITH US!" />
@@ -38,7 +38,7 @@ function SignUpPage() {
                 labelText="Username"
                 inputName="username"
                 inputType="text"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
+                inputClass="email-pw-form border-slate-600 w-full h-[69px] placeholder:px-[1rem] border"
                 placeholder="Enter your Username"
               />
               <Input
@@ -46,7 +46,7 @@ function SignUpPage() {
                 labelText="Email"
                 inputName="email"
                 inputType="email"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
+                inputClass="email-pw-form border-slate-600 w-full h-[69px] placeholder:px-[1rem] border"
                 placeholder="Enter your Email"
               />
               <Input
@@ -54,7 +54,7 @@ function SignUpPage() {
                 labelText="Password"
                 inputName="password"
                 inputType="password"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
+                inputClass="email-pw-form border-slate-600 w-full h-[69px] placeholder:px-[1rem] border"
                 placeholder="********"
               />
               <Input
@@ -62,20 +62,20 @@ function SignUpPage() {
                 labelText="Confirm Password"
                 inputName="confirmPassword"
                 inputType="password"
-                inputClass="email-pw-form border-slate-600 w-[450px] h-[69px] placeholder:px-[1rem] border"
+                inputClass="email-pw-form border-slate-600 w-full h-[69px] placeholder:px-[1rem] border"
                 placeholder="********"
               />
               <ReceiveNews />
               <div className="sign-up-buttons flex flex-col">
                 <Button
                   buttonText="Sign Up"
-                  className="bg-black text-white py-1 px-6 my-3 w-[450px] h-[62px]"
+                  className="bg-black text-white py-1 px-6 my-3 w-full h-[62px]"
                 />
               </div>
             </form>
           </div>
         </div>
-        <div className="bottomPageButton">
+        <div className="bottomPageButton5">
           <BottomPageButtons
             bottomPageText="Already Have An Account?"
             bottomPageButtonText="Sign In"
