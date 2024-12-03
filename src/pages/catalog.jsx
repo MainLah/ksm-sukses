@@ -1,7 +1,7 @@
 import { React, useState, createContext } from "react";
 import Navbar from "../components/fragments/Navbar";
 import Footer from "../components/fragments/Footer";
-import ProductGrid from "../components/fragments/ProductGrid";
+import ProductGridWithModal from "../components/fragments/ProductGridWithModal";
 import TableFilter from "../components/fragments/TableFilter";
 import TableColor from "../components/fragments/TableColor";
 import Modal from "../components/fragments/Modal";
@@ -37,7 +37,7 @@ export default function CatalogPage() {
             </p>
           </div>
           <Context.Provider value={[isOpen, setIsOpen]}>
-            <ProductGrid numberOfProducts="15" numberOfCols="3">
+            <ProductGridWithModal numberOfProducts="15" numberOfCols="3">
               <div className="flex flex-row justify-between text-2xl col-span-3">
                 <p>
                   <i className="bi bi-chevron-left mr-3"></i>Back
@@ -47,7 +47,7 @@ export default function CatalogPage() {
                   Next<i className="bi bi-chevron-right ml-3"></i>
                 </p>
               </div>
-            </ProductGrid>
+            </ProductGridWithModal>
           </Context.Provider>
         </div>
       </div>
